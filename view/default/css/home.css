@@ -1,0 +1,29 @@
+#logocentral img
+{
+    width: 470px;    
+    margin-top:0px;
+    margin-left:300px;
+    margin-bottom:-30px;
+}
+
+.nav-list > li > a {
+    font-size: 11px;    
+}
+
+.nav-list > li .submenu > li > a {
+    font-size: 10px;
+}
+
+#sidebar-shortcuts{
+	padding-top: 10px;
+}
+
+#sidebar{
+	margin: ;
+}
+
+#background {
+	
+	height: 800px;
+}
+

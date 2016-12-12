@@ -1,0 +1,102 @@
+.signin-info img
+{
+    width: 200px;
+}
+
+.view {
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+    border: 5px solid #1A7AB9;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+}
+.view .mask, .view .conent {
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.view img {
+    display: block;
+    position: relative;
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: hsla(0,0%,0%,0.8);
+    margin: 20px 0 0 0;
+}
+.view p {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center;
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000;
+}
+
+.view img {
+    transition: all 0.2s linear;
+}
+.view .mask {
+    opacity: 0;
+    background-color: hsla(199, 3%, 30%, 0.49); /* Color naranja con 0.7 de opacidad */
+    transition: all 0.4s ease-in-out;
+}
+.view h2 {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all 0.2s ease-in-out;
+}
+.view p {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.2s linear;
+}
+.view a.info {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.view:hover img {
+    transform: scale(1.1);
+}
+.view:hover .mask {
+    opacity: 1;
+}
+.viwe:hover h2,
+.view:hover p,
+.view:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view:hover p {
+    transition-delay: 0.1s;
+}
+.view:hover a.info {
+    transition-delay: 0.2s;
+}
